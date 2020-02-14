@@ -24,18 +24,18 @@ class Triangle
     if valid?
       if @triangle_sides.uniq.length == 1
         return :equilateral
-       @telsifriangle_sides.uniq.length == 2
+      elsif @triangle_sides.uniq.length == 2
         return :isosceles
       else
         return :scalene
       end
-    else @triangle_sides.collect do |side| side <= 0 
+    else
       raise TriangleError
     end
-  end 
   end
 end
 
 class TriangleError < StandardError
 
 end
+
