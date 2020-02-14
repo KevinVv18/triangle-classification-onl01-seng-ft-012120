@@ -41,8 +41,7 @@ class TriangleError < StandardError
     if @triangle_sides.each do |side| side <= 0
       raise TriangleError
     end
-  en
-  d
+  end
 end 
 end
 
