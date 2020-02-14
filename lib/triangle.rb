@@ -26,7 +26,7 @@ class Triangle
         return :equilateral
        @telsifriangle_sides.uniq.length == 2
         return :isosceles
-      elsif 
+      else
         return :scalene
       end
     else @triangle_sides.collect do |side| side <= 0 
