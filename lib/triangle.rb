@@ -36,6 +36,11 @@ class Triangle
 end
 
 class TriangleError < StandardError
+  def kind
+    if @triangle_sides.each do {|side| side <= 0}
+      raise TriangleError
+    end
+  end
 
 end
 
